@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header {
+    background-color: rgb(203, 155, 142) !important;
+}
+
+
+
+@media screen and (max-width: 991.98px) {
+    
+}
