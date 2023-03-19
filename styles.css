@@ -49,7 +49,7 @@ img {
 
 nav a {
     color: rgb(28, 28, 28) !important;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
@@ -71,6 +71,38 @@ nav a {
     display: inline-flex;
 }
 
+
+/* NAVBAR DROPDOWN HOVER */
+.navbar li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+
+
+.navbar li:hover ul {
+    display: inline-block;
+}
+
+.navbar li ul li {
+  display: block;
+}
+
+.navbar li ul li a {
+  padding: 10px;
+  color: gray !important;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.navbar li ul li a:hover {
+  background-color: #555;
+}
 
 /* RESPONSIVENESS */
 @media screen and (max-width: 900px) and (min-width: 300px) {
