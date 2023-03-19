@@ -10,6 +10,24 @@
 
 
 
-@media screen and (max-width: 991.98px) {
-    
+@media screen and (max-width: 900px) {
+    .head, .mid {
+        display: none;
+    }
+    .social-icons {
+        margin: auto;
+        padding: 0;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 580px) {
+    .head, .mid {
+        display: none;
+    }
+    .social-icons {
+        margin: auto;
+    }
+
 }
