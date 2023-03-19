@@ -4,30 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(208, 218, 222);
+}
+
 .header {
     background-color: rgb(203, 155, 142) !important;
 }
 
-
-
-@media screen and (max-width: 900px) {
-    .head, .mid {
-        display: none;
-    }
-    .social-icons {
-        margin: auto;
-        padding: 0;
-        width: auto;
-    }
-
+.social-icons {
+    width: auto;
 }
 
-@media screen and (min-width: 580px) {
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
     .head, .mid {
         display: none;
     }
     .social-icons {
         margin: auto;
+        padding: auto;
+        width: auto;
+        display: flex;
     }
-
 }
