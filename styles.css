@@ -8,6 +8,8 @@ body {
     background-color: rgb(208, 218, 222);
 }
 
+
+/*HEADER CSS*/
 .header {
     background-color: rgb(203, 155, 142) !important;
 }
@@ -16,7 +18,61 @@ body {
     width: auto;
 }
 
+.col a {
+    text-decoration: none;
+    color: white;
+}
 
+.fas, .fab {
+    cursor: pointer;
+}
+
+
+/* NAVBAR CSS */
+.logo {
+    display:block;
+    margin: auto;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;}
+
+p.logo {
+    margin-top: -17px;
+}
+
+img {
+    height: 45px;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+nav a {
+    color: rgb(28, 28, 28) !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding-top: 40px;
+    text-transform: uppercase;
+    padding-left: 6px;
+}
+
+.fa-chevron-down {
+    font-size: 8px;
+    opacity: 0.6;
+    margin-left: -5px;
+}
+
+.login {
+    display: inline-flex;
+}
+
+
+/* RESPONSIVENESS */
 @media screen and (max-width: 900px) and (min-width: 300px) {
     .head, .mid {
         display: none;
