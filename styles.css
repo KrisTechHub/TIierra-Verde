@@ -80,16 +80,19 @@ nav a {
     left: 0;
     background-color: #fff;
     text-transform: capitalize;
+    width: 800px;
 }
 
 
 .navbar li:hover ul {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar li ul li {
   display: block;
 }
+
 
 .navbar li ul li a {
   padding: 10px;
