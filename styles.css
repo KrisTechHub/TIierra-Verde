@@ -76,6 +76,7 @@ li .link::before {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
+    padding-left: 15px;
 }
   
 li .link:hover::before {
@@ -100,21 +101,33 @@ nav ul {
     margin: 0;
     padding: 0;
     position: fixed;
-  }
+}
   
-  nav ul li {
+nav ul li {
     display: inline-block;
     position: relative;
-  }
+}
   
-  nav ul li:hover > ul {
-    display: block;
+nav ul li:hover > ul {
+    display: flex;
     width: 800px;
     top: 80px;
-    transition: all 1s ease-in-out;
-  }
+    animation: fade-in 0.2s ease-in-out;
+    box-shadow: 2px 2px 4px gray;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
   
-  nav ul ul {
+nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -123,26 +136,25 @@ nav ul {
     padding: 0;
     margin: 0;
     border: 1px solid #ccc;
-  }
+}
   
-  nav ul ul li {
+nav ul ul li {
     display: block;
-  }
+}
   
-  nav ul ul li a {
+nav ul ul li a {
     display: block;
     padding: 10px;
     color: #333;
     text-decoration: none;
-    margin-left: 15px;
-  }
+}
    
-  nav ul ul li:hover > a {
+nav ul ul li:hover > ul {
     display: block;
     left: 100%;
     top: 0;
     transition: all 0.3s ease-in-out;   
-  }
+}
   
   
 
