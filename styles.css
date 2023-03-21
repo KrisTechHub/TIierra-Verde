@@ -229,7 +229,6 @@ footer {
     background-color: #e7e0d8;
     height: 100px;
     position: fixed;
-    overflow: auto;
 }
 
 .main-footer {
@@ -237,7 +236,6 @@ footer {
     height: 400px;
     bottom: 0;
     position: absolute;
-    overflow: auto;
 }
 
 .about-services {
