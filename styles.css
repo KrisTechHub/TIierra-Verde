@@ -217,8 +217,63 @@ nav ul ul li:hover > ul {
     }
 }
 
+
+
+
+/* FOOTER */
+.main-footer {
+    background-color: rgb(232, 232, 224);
+    height: 400px;
+    bottom: 0;
+    position: absolute;
+
+}
+
 .about-services {
     font-size: 13px;
+}
+
+.footer-socials {
+    border-radius: 50px;
+}
+
+.footer-fb {
+    border: 2px solid rgb(150, 149, 149);
+}
+
+.footer-column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pj1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pj2 {
+    display: flex;
+    flex-direction: row;
+    line-height: 10px;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-img {
+    height: 80px;
+    width: 60px;
+}
+
+.text-muted {
+    font-size: 11px;
+}
+
+.underlign {
+    width: 250px;
+    height: 1px;
+    background-color: #acabab;
 }
 
 .copyrights-wrapper {
