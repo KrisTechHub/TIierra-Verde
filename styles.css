@@ -11,7 +11,7 @@ body {
 
 /*HEADER CSS*/
 .header {
-    background-color: rgb(203, 155, 142) !important;
+    background-color: #c19280 !important;
 }
 
 .social-icons {
@@ -72,7 +72,7 @@ li .link::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(203, 155, 142);
+    background-color: #c19280;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -181,7 +181,7 @@ nav ul ul li:hover > ul {
 }
 
 .dd:hover {
-    color:rgb(203, 155, 142) !important;
+    color:#c19280 !important;
 }
   
 .plant-care {
@@ -222,7 +222,7 @@ nav ul ul li:hover > ul {
 
 /* FOOTER */
 .main-footer {
-    background-color: rgb(232, 232, 224);
+    background-color: #f8f4ec;
     height: 400px;
     bottom: 0;
     position: absolute;
@@ -231,14 +231,40 @@ nav ul ul li:hover > ul {
 
 .about-services {
     font-size: 13px;
+    line-height: 25px;
+    color: #707070;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .footer-socials {
     border-radius: 50px;
+    border: 2px solid rgb(200, 199, 199);
+    padding: .6rem .6rem; 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: gray;
+    font-size:18px;
 }
 
-.footer-fb {
-    border: 2px solid rgb(150, 149, 149);
+.footer-socials:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-fb:hover {
+    background-color: rgba(17, 17, 182, 0.874);
+    border: 2px solid rgba(17, 17, 182, 0.874);
+}
+
+.footer-email:hover {
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+.footer-insta:hover {
+    background-color: rgb(120, 46, 46);
+    border: 2px solid rgb(120, 46, 46);
 }
 
 .footer-column-2 {
@@ -248,6 +274,7 @@ nav ul ul li:hover > ul {
 
 .pj1 {
     font-family: Arial, Helvetica, sans-serif;
+    color: #454545;
 }
 
 .pj2 {
@@ -277,7 +304,7 @@ nav ul ul li:hover > ul {
 }
 
 .copyrights-wrapper {
-    background-color: rgb(203, 155, 142) !important;
+    background-color: #c19280 !important;
     color: #f9f9f9;
     font-weight: 500;
     padding: 25px;
