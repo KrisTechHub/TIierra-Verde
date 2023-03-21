@@ -29,6 +29,8 @@ body {
 
 
 /* NAVBAR CSS */
+
+
 .logo {
     display:block;
     margin: auto;
@@ -222,20 +224,20 @@ nav ul ul li:hover > ul {
 
 /* FOOTER */
 footer {
-    overflow: auto;
+    position: relative;
 }
 
 .newsletter {
     background-color: #e7e0d8;
-    height: 100px;
-    position: fixed;
+    height: 130px;
+    display: flex;
+    box-sizing: border-box;
 }
 
 .main-footer {
     background-color: #f8f4ec;
-    height: 400px;
+    height: 300px;
     bottom: 0;
-    position: absolute;
 }
 
 .about-services {
@@ -326,7 +328,6 @@ footer {
     text-align: center;
     font-size: 14px;
     height: 70px;
-    position: absolute;
     bottom: 0;
     width: 100%;
     
