@@ -54,15 +54,15 @@ a {
 .nav-link {
     padding-top: 40px;
     text-transform: uppercase;
-    padding-left: 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding-bottom: 1px;
     color: rgb(28, 28, 28) !important;
-}
+}   
 
 li .link {
     position: relative;
+    margin-left: 18px;
 }
 
 li .link::before {
@@ -87,7 +87,7 @@ li .link:hover::before {
 .fa-chevron-down {
     font-size: 8px;
     opacity: 0.6;
-    margin-left: -2px;
+    margin-left: -1px;
 }
 
 .login {
@@ -135,7 +135,7 @@ nav ul ul {
     background-color: #f9f9f9;
     padding: 0;
     margin: 0;
-    padding-bottom: 20px;
+    padding: 20px 10px;
     border-radius: 5px;
 }
 
@@ -189,9 +189,8 @@ nav ul ul li:hover > ul {
     height: 10px;
 }
 
-.plant-services {
-    display: flex !important;
-    flex-direction: row !important;
+.plant-services, .about {
+    flex-direction: column;
 }
 
 
@@ -217,3 +216,22 @@ nav ul ul li:hover > ul {
         display: flex;
     }
 }
+
+.about-services {
+    font-size: 13px;
+}
+
+.copyrights-wrapper {
+    background-color: rgb(203, 155, 142) !important;
+    color: #f9f9f9;
+    font-weight: 500;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+  
