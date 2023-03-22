@@ -229,9 +229,24 @@ footer {
 
 .newsletter {
     background-color: #e7e0d8;
-    height: 130px;
+    height: 200px;
     display: flex;
     box-sizing: border-box;
+    align-items: center ;
+}
+
+.newstitle p {
+    color: #707070;
+}
+
+.newstitle h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+.signup input {
+    border: 2px solid #c5c3c3;
+    background-color: transparent;
 }
 
 .main-footer {
