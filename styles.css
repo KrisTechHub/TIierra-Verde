@@ -29,6 +29,9 @@ body {
 
 
 /* NAVBAR CSS */
+nav {
+    position: fixed;
+}
 
 
 .logo {
@@ -344,8 +347,7 @@ footer {
     font-size: 14px;
     height: 70px;
     bottom: 0;
-    width: 100%;
-    
+    width: 100%;   
 }
 
   
