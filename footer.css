@@ -132,6 +132,31 @@ input:focus {
     font-size: 11px;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 25px;
+}
+
+a {
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+a:hover {
+    color: black;
+}
+
+.contact {
+    color: rgb(43, 42, 42) !important;
+    font-weight: bold;
+}
+
+.contact:hover {
+    opacity: 0.8;
+}
+
 .underlign {
     width: 250px;
     height: 1px;
