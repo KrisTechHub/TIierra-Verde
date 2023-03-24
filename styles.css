@@ -175,7 +175,7 @@ nav ul ul li:hover > ul {
 }
 
 .dropdown-list:hover {
-    color:rgb(203, 155, 142) !important;
+    color: #c19280 !important;
 }
 
 .dd {
@@ -254,18 +254,29 @@ footer {
     width: 270px;
 }
 
-::-webkit-input-placeholder { /* Style for the placeholder text */
+input[type="email"] {
     padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
 }
 
-input[type="text"] {
-    text-indent: 10px;
+input:focus {
+    outline: none; /*remove highlight on border */
   }
+  
+  
 
-.btn {
+.btn-danger {
     border-radius: 50px;
     width: 135px;
-    height: 45px;
+    height: 43px;
+    background-color: #c19280;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-danger:hover {
+    background-color: #aa7964;    
 }
 
 .main-footer {
