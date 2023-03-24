@@ -250,6 +250,22 @@ footer {
 .signup input {
     border: 2px solid #c5c3c3;
     background-color: transparent;
+    height: 40px;
+    width: 270px;
+}
+
+::-webkit-input-placeholder { /* Style for the placeholder text */
+    padding: 10px;
+}
+
+input[type="text"] {
+    text-indent: 10px;
+  }
+
+.btn {
+    border-radius: 50px;
+    width: 135px;
+    height: 45px;
 }
 
 .main-footer {
