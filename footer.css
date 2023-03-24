@@ -7,7 +7,6 @@
     background-color: #e7e0d8;
     height: 200px;
     display: flex;
-    box-sizing: border-box;
     align-items: center ;
 }
 
