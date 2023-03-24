@@ -10,8 +10,11 @@ body {
 
 
 /*HEADER CSS*/
-.header {
+.top-div {
     background-color: #c19280 !important;
+    position: sticky;
+    visibility: visible;
+    overflow: hidden;
 }
 
 .social-icons {
@@ -21,16 +24,18 @@ body {
 .col a {
     text-decoration: none;
     color: white;
-}
-
-.fas, .fab {
     cursor: pointer;
 }
 
+.col a:hover {
+    opacity: 0.7;
+}
 
 /* NAVBAR CSS */
-nav {
+.navigation-bar {
     position: fixed;
+    background-color: rgb(208, 218, 222) !important;
+    overflow: hidden    
 }
 
 
@@ -134,7 +139,7 @@ nav ul li:hover > ul {
   
 nav ul ul {
     display: none;
-    position: absolute;
+    position:absolute;
     top: 100%;
     left: 0;
     background-color: #f9f9f9;
@@ -142,6 +147,7 @@ nav ul ul {
     margin: 0;
     padding: 20px 10px;
     border-radius: 5px;
+    z-index: 2;
 }
 
 nav ul li:hover > shop:hover {
@@ -150,6 +156,7 @@ nav ul li:hover > shop:hover {
   
 nav ul ul li {
     display: block;
+    z-index: 2;
 }
   
 nav ul ul li a {
@@ -225,156 +232,6 @@ nav ul ul li:hover > ul {
 
 
 
-/* FOOTER */
-footer {
-    position: relative;
-}
 
-.newsletter {
-    background-color: #e7e0d8;
-    height: 200px;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center ;
-}
-
-.newstitle p {
-    color: #707070;
-}
-
-.newstitle h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px;
-}
-
-.signup input {
-    border: 2px solid #c5c3c3;
-    background-color: transparent;
-    height: 40px;
-    width: 270px;
-}
-
-input[type="email"] {
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-}
-
-input:focus {
-    outline: none; /*remove highlight on border */
-  }
-  
-  
-
-.btn-danger {
-    border-radius: 50px;
-    width: 135px;
-    height: 43px;
-    background-color: #c19280;
-    border: none;
-    font-weight: 500;
-}
-
-.btn-danger:hover {
-    background-color: #aa7964;    
-}
-
-.main-footer {
-    background-color: #f8f4ec;
-    height: 300px;
-    bottom: 0;
-}
-
-.about-services {
-    font-size: 13px;
-    line-height: 25px;
-    color: #707070;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.footer-socials {
-    border-radius: 50px;
-    border: 2px solid rgb(200, 199, 199);
-    padding: .6rem .6rem; 
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    color: gray;
-    font-size:18px;
-}
-
-.footer-socials:hover {
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-.footer-fb:hover {
-    background-color: rgba(17, 17, 182, 0.874);
-    border: 2px solid rgba(17, 17, 182, 0.874);
-}
-
-.footer-email:hover {
-    background-color: orange;
-    border: 2px solid orange;
-}
-
-.footer-insta:hover {
-    background-color: rgb(120, 46, 46);
-    border: 2px solid rgb(120, 46, 46);
-}
-
-.footer-column-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.pj1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #454545;
-}
-
-.pj2 {
-    display: flex;
-    flex-direction: row;
-    line-height: 10px;
-}
-
-.footer-title {
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #454545;
-}
-
-.footer-img {
-    height: 80px;
-    width: 60px;
-}
-
-.footer-img:hover, .footer-title:hover {
-    opacity: 0.8;
-}
-
-.text-muted {
-    font-size: 11px;
-}
-
-.underlign {
-    width: 250px;
-    height: 1px;
-    background-color: #acabab;
-}
-
-.copyrights-wrapper {
-    background-color: #c19280 !important;
-    color: #f9f9f9;
-    font-weight: 500;
-    padding: 25px;
-    text-align: center;
-    font-size: 14px;
-    height: 70px;
-    bottom: 0;
-    width: 100%;   
-}
 
   
