@@ -14,7 +14,6 @@ body {
     background-color: #c19280 !important;
     position: sticky;
     visibility: visible;
-    overflow: hidden;
 }
 
 .social-icons {
@@ -34,8 +33,7 @@ body {
 /* NAVBAR CSS */
 .navigation-bar {
     position: fixed;
-    background-color: rgb(208, 218, 222) !important;
-    overflow: hidden    
+    background-color: rgb(208, 218, 222) !important;    
 }
 
 
@@ -147,16 +145,17 @@ nav ul ul {
     margin: 0;
     padding: 20px 10px;
     border-radius: 5px;
-    z-index: 2;
+    z-index: 999 !important;
+
 }
 
 nav ul li:hover > shop:hover {
     width: 800px;
+    z-index: 999 !important;
 }
   
 nav ul ul li {
     display: block;
-    z-index: 2;
 }
   
 nav ul ul li a {
@@ -170,6 +169,8 @@ nav ul ul li:hover > ul {
     left: 100%;
     top: 0;
     transition: all 0.3s ease-in-out;   
+    z-index: 999 !important;
+
 }
 
 .dropdown-list {
