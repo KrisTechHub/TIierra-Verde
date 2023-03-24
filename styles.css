@@ -34,6 +34,7 @@ body {
 .navigation-bar {
     position: fixed;
     background-color: rgb(208, 218, 222) !important;    
+    z-index: 1;
 }
 
 
@@ -145,8 +146,6 @@ nav ul ul {
     margin: 0;
     padding: 20px 10px;
     border-radius: 5px;
-    z-index: 999 !important;
-
 }
 
 nav ul li:hover > shop:hover {
@@ -169,8 +168,6 @@ nav ul ul li:hover > ul {
     left: 100%;
     top: 0;
     transition: all 0.3s ease-in-out;   
-    z-index: 999 !important;
-
 }
 
 .dropdown-list {
