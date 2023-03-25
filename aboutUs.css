@@ -25,12 +25,12 @@ main img {
 }
 
 .note {
-    color: #c19280;
+    color: #c19280 !important;
     letter-spacing: 1px;
 }
 
 .description p {
-    color: gray;
+    color: rgb(116, 116, 116);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 30px;
