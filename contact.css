@@ -1,0 +1,29 @@
+main {
+    display: flex;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 13px;
+    color: rgb(116, 116, 116);
+    font-weight: 500;
+}
+
+.left-div {
+    border-left: 1px solid gray;
+}
+
+h6 {
+    text-transform: uppercase;
+    color: gray;
+}
+
+h5 {
+    text-transform:uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
