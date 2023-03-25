@@ -44,11 +44,13 @@ body {
     font-family: 'Dancing Script', cursive;}
 
 p.logo {
+    margin-bottom: 15px;
     margin-top: 5px;
 }
 
-img {
+.logo img {
     height: 45px;
+    margin-top: 5px;
 }
 
 .transparent-bg {

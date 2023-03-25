@@ -8,11 +8,30 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.img-container {
-    
+main img {
+    width: 570px;
+    height: auto;
 }
 
-main img {
-    height: auto;
-    width: 550px;
+.div2 {
+    display: flex;
+    background-color: rgb(227, 227, 227) !important;
+}
+
+.description h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.note {
+    color: #c19280;
+    letter-spacing: 1px;
+}
+
+.description p {
+    color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
 }
