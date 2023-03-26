@@ -16,7 +16,6 @@ p {
 
 .left-div {
     border-left: 1px solid rgb(194, 194, 194);
-    
 }
 
 h6 {
@@ -44,13 +43,18 @@ input {
     width: 300px;
     padding-left: 8px;
     border: 1.3px rgb(189, 189, 189) solid !important;
+}
 
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
 }
 
 textarea {
     width: 300px;
     height: 200px;
-    border: 1.3px rgb(189, 189, 189) solid !important
+    border: 1.3px rgb(189, 189, 189) solid !important;
+    padding-left: 8px;
+    padding-top: 5px;
 }
 
 button {
