@@ -3,3 +3,9 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
 }
+
+p {
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+
+}
