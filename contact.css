@@ -27,3 +27,13 @@ h5 {
     text-transform:uppercase;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+.name, .email, .comment {
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+i {
+    font-size: 12px;
+}
