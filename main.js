@@ -19,10 +19,9 @@ window.onscroll = function() {
 
 
 //CONTACT PAGE FUNCTION
+const form = document.getElementById('submit');
 
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', (event) => {
+submit.addEventListener('click', (event) => {
   event.preventDefault(); // prevent the form from submitting
 
   // get the input field values
@@ -30,25 +29,21 @@ form.addEventListener('submit', (event) => {
   const email = document.getElementById('email').value;
   const comments = document.getElementById('input').value;
 
-  // validate the input fields
-  if (!name || !email || !comments) {
-    alert('Please fill in all fields.');
-    return;
-  }
+  // create an object with the form data
+  const formData = { name, email, comments };
 
   // send the form data to the server using an HTTP request
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', '/submit-contact-form');
+  xhr.open('POST', '/submit-form');
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function() {
     if (xhr.status === 200) {
-      alert('Thanks for contacting us!');
-      form.reset();
+      const response = JSON.parse(xhr.responseText);
+      console.log(response.message);
     } else {
-      alert('There was a problem submitting the form. Please try again later.');
+      console.error('There was a problem submitting the form.');
     }
   };
-  xhr.send(JSON.stringify({ name, email, comments }));
+  xhr.send(JSON.stringify(formData));
 });
-
-
+//END

@@ -145,7 +145,7 @@
             <h6 class="info mt-5">information about our products & services</h6>
             <h5 class="contact mt-3">contact us</h5>
 
-            <form id="form">
+            <form id="form" method="post">
                 <div class="name mt-5">
                     <label for="name">Name</label>
                     <i class="fas fa-user"></i><span class="required-asterisk"></span>
@@ -166,11 +166,11 @@
                     <label for="comment">Comment or Message</label>
                     <i class="fas fa-edit"></i> <span class="required-asterisk"></span>
                     <br>
-                    <textarea class="mb-3" name="post" id="input" cols="30" rows="10" placeholder="Write your comment / message..." ></textarea>
+                    <textarea class="mb-3" name="post" id="input" cols="30" rows="10" placeholder="Write your comment or message..." ></textarea>
                 </div>
                 
                 <div class="submit mb-5">
-                    <button class="btn-secondary" type="submit">Submit</button>
+                    <input id="submit" class="btn-secondary" type="submit" value="Submit">
                 </div>
             </form>
         </div>
