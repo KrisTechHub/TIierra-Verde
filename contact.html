@@ -148,7 +148,7 @@
             <form id="form">
                 <div class="name mt-5">
                     <label for="name">Name</label>
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user"></i><span class="required-asterisk"></span>
                             <br>
                     <input class="mb-3" type="text" name="name" id="name" placeholder="Enter your name..." required>
                         <div class="error"></div>
@@ -156,7 +156,7 @@
 
                 <div class="email">
                     <label for="email">Email</label>
-                    <i class="far fa-envelope"></i>
+                    <i class="far fa-envelope"></i><span class="required-asterisk"></span>
                         <br>
                     <input class="mb-3" type="email" name="email" id="email" placeholder="example@email.com" required>
                         <div class="error"></div>
@@ -164,13 +164,13 @@
 
                 <div class="comment">
                     <label for="comment">Comment or Message</label>
-                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-edit"></i> <span class="required-asterisk"></span>
                     <br>
                     <textarea class="mb-3" name="post" id="input" cols="30" rows="10"></textarea>
                 </div>
                 
                 <div class="submit mb-5">
-                    <button type="submit">Submit</button>
+                    <button class="btn-secondary" type="submit">Submit</button>
                 </div>
             </form>
         </div>
