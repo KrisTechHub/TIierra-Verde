@@ -32,9 +32,9 @@ form.addEventListener("submit", (e) => {
 });
 
 const formValidation = () => {
-  if (!names || !email || !comment) {
+  if (names === "" || email === "" || comment === "") {
     alert("Please fill in all fields.");
-    return;
+  
   } else {
     acceptData();
   }
@@ -42,11 +42,9 @@ const formValidation = () => {
 
 let data = {};
 let acceptData = () => {
-  data["text"] = {names, email, comment};
-  console.log(`Email: ${email}, Name: ${names}`);
+  data["text"] = {names};
+  console.log(`Name: ${names}`);
   form.reset();
 }
-
-
 
 //END
