@@ -20,9 +20,9 @@ window.onscroll = function() {
 
 //CONTACT PAGE FUNCTION
 let form = document.getElementById("form");
-let names = document.getElementById("name").value;
-let email = document.getElementById("email").value;
-let comment = document.getElementById("input").value;
+let names = document.getElementById("name");
+let email = document.getElementById("email");
+let comment = document.getElementById("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -32,9 +32,8 @@ form.addEventListener("submit", (e) => {
 });
 
 const formValidation = () => {
-  if (names === "" || email === "" || comment === "") {
+  if (names.value === "" || email.value === "" || comment.value === "") {
     alert("Please fill in all fields.");
-  
   } else {
     acceptData();
   }
@@ -43,7 +42,7 @@ const formValidation = () => {
 let data = {};
 let acceptData = () => {
   data["text"] = {names};
-  console.log(`Name: ${names}`);
+  console.log(`Name: ${names}, Email: ${email}, Comment: ${comment}`);
   form.reset();
 }
 
