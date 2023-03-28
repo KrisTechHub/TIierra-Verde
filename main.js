@@ -41,9 +41,11 @@ const formValidation = () => {
 
 let data = {};
 let acceptData = () => {
-  data["text"] = {names};
-  console.log(`Name: ${names}, Email: ${email}, Comment: ${comment}`);
+  data["text"] = {names, email, comment};
+  console.log(`Name: ${names.value}, Email: ${email.value}, Comment: ${comment.value}`);
+  alert(`Thank you for contacting us, ${names.value}!`);
   form.reset();
+  
 }
 
 //END
