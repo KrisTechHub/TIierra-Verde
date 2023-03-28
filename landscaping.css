@@ -1,3 +1,36 @@
 .banner {
     display: flex;
 }
+
+.left {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.right img {
+    width: 630px;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: #c19280 !important;
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #c19280;
+    color: aliceblue;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    height: 50px;
+    width: 190px;
+}
