@@ -1,4 +1,4 @@
-.banner {
+.banner{
     display: flex;
 }
 
@@ -35,7 +35,12 @@ h2 {
     width: 190px;
 }
 
-p {
+.btn:hover {
+    opacity: 1.5;
+    color: aliceblue;
+}
+
+p, ul {
     color: rgb(116, 116, 116);
     font-size: 17px;
     font-weight: 400;
@@ -44,3 +49,12 @@ p {
 .skills img {
     width: 570px;
 }
+
+.column {
+    display: flex;
+}
+
+.col-6 {
+    display: flex;
+}
+    
