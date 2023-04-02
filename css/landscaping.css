@@ -207,15 +207,11 @@ menu {
   }
   
   .menu-item {
-    display: grid;
+    display: block;
     gap: 1rem 2rem;
     max-width: 25rem;
   }
-  
-  img:not(.logo) {
-    width: 100%;
-  }
-  
+    
   .photo {
     object-fit: cover;
     height: 200px;
