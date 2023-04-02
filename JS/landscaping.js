@@ -62,11 +62,11 @@ const menu = [
     let displayMenu = menuItems.map(function(item) {
   
         return `<article class="menu-item">
-        <img src=${item.img} alt=${item.title} class="photo"/>
-        <div class="item-info">
-            <p class="item-next">${item.category}</p>
-            <h4>${item.title}</h4>
-        </div>
+            <img src=${item.img} alt=${item.title} class="photo"/>
+            <div class="item-info">
+                <p class="item-next">${item.category}</p>
+                <h4>${item.title}</h4>
+            </div>
       </article>`;
     });
     displayMenu = displayMenu.join("");
