@@ -57,4 +57,12 @@ p, ul {
 .col-6 {
     display: flex;
 }
-    
+
+i {
+    color: black;
+    padding-top: 20px;
+}
+
+.fa-check {
+    padding-right: 10px;
+}
