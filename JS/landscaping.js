@@ -7,58 +7,46 @@ const menu = [
         },
     {
       id: 2,
-      title: "diner double",
-      category: "lunch",
+      title: "zen garden",
+      category: "landscape design",
       img: "/images/landscaping/4.jpg",
     },
     {
       id: 3,
-      title: "godzilla milkshake",
-      category: "shakes",
+      title: "lanai",
+      category: "landscape design, lanai",
       img: "/images/landscaping/5.jpg",
     },
     {
       id: 4,
-      title: "country delight",
-      category: "breakfast",
+      title: "ancestral house",
+      category: "landscape design",
       img: "/images/landscaping/6.jpg",
     },
     {
       id: 5,
       title: "egg attack",
-      category: "lunch",
+      category: "modern house",
       img: "/images/landscaping/7.jpg",
     },
     {
       id: 6,
       title: "oreo dream",
-      category: "shakes",
+      category: "courtyard",
       img: "/images/landscaping/8.jpg",
     },
     {
       id: 7,
-      title: "bacon overflow",
-      category: "breakfast",
+      title: "potted garden",
+      category: "landscape design",
       img: "/images/landscaping/9.jpg",
     },
     {
       id: 8,
-      title: "american classic",
-      category: "lunch",
+      title: "expo booth",
+      category: "booth design, landscape design",
       img: "/images/landscaping/10.jpg",
-    },
-    {
-      id: 9,
-      title: "quarantine buddy",
-      category: "shakes",
-      img: "/images/landscaping/11.jpg",
-    },
-    {
-      id: 10,
-      title: "bison steak",
-      category: "dinner",
-      img: "/images/landscaping/12.jpg",
-    },
+    }
   ];
   
   const sectionCenter = document.querySelector(".section-center");
