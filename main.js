@@ -47,5 +47,27 @@ let acceptData = () => {
   form.reset();
   
 }
-
 //END
+
+//LANDSCAPING TAB FUNCTIONS
+
+const designs = document.querySelector(".designs");
+const tabtns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".content");
+
+designs.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    // remove selected from other buttons
+    tabtns.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    // hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+});

@@ -58,11 +58,8 @@ p, ul {
     display: flex;
 }
 
-i {
-    color: black;
-    padding-top: 20px;
-}
-
 .fa-check {
     padding-right: 10px;
+    color: black;
+    padding-top: 20px;
 }
