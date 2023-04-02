@@ -63,3 +63,62 @@ p, ul {
     color: black;
     padding-top: 20px;
 }
+
+
+/* hide content on inactive tabs*/
+.content {
+    display: none;
+}
+
+.tab-btn.active {
+    background: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.designs {
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 600px;
+}
+
+.tab-btn {
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(116, 116, 116);
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: none;
+    position: relative;
+
+}
+
+.tab-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c19280;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    padding-left: 15px;
+}
+
+.tab-btn:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}

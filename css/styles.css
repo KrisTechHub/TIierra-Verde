@@ -89,7 +89,7 @@ li .link::before {
     padding-left: 15px;
 }
   
-li .link:hover::before {
+li .link:hover::before, .link:active {
     visibility: visible;
     transform: scaleX(1);
 }
