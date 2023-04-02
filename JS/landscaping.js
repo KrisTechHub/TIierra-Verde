@@ -112,3 +112,21 @@ const menu = [
       });
     });
   }
+
+const buttons = document.getElementsByClassName(".filter-btn");
+
+function setActive(e) {
+  for (var i = 0; i < buttons.length; i++) {
+      if (buttons[i] == e) {
+        e.classList.toggle("active");
+      } else {
+        buttons[i].classList.remove('active');
+      }
+    }
+}
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    setActive(this);
+  });
+}
