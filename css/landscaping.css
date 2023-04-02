@@ -41,7 +41,7 @@ h2 {
 }
 
 p, ul {
-    color: rgb(116, 116, 116);
+    color: #747474;
     font-size: 17px;
     font-weight: 400;
 }
@@ -79,29 +79,33 @@ p, ul {
 }
 
 .designs {
-  border-radius: 5px;
-  display: grid;
-  grid-template-rows: auto 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .btn-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 600px;
+    justify-self: center;
 }
 
 .tab-btn {
     border: none;
     text-transform: uppercase;
     font-size: 1rem;
-    color: rgb(116, 116, 116);
+    color: #747474;
     font-family: 'Times New Roman', Times, serif;
     display: block;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     background: none;
     position: relative;
-
 }
 
 .tab-btn::before {

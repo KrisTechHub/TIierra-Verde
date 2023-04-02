@@ -10,7 +10,7 @@ h3 {
 
 p {
     font-size: 13px;
-    color: rgb(116, 116, 116);
+    color: #747474;
     font-weight: 500;
 }
 
@@ -20,7 +20,7 @@ p {
 
 h6 {
     text-transform: uppercase;
-    color: rgb(151, 151, 151);
+    color: #747474;
 }
 
 h5 {
@@ -62,7 +62,7 @@ button {
     height: 40px;
     background-color: rgb(219, 219, 219) !important;
     border: 1px rgb(189, 189, 189) solid !important;
-    color: rgb(67, 67, 67) !important;
+    color: #747474;
     font-weight: 500;
     font-size: 14px;
 }
