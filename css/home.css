@@ -1,9 +1,57 @@
+.banner {
+    display: flex;
+}
+
 .left {
     align-items: center;
     justify-content: center;
     margin: auto;
+    text-align: center;
 }
 
 .right img {
     width: 630px;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px ;
+    font-weight: 600;
+}
+
+
+.btn {
+    text-transform: uppercase;
+    background-color: #c19280;
+    color: aliceblue;
+    border-radius: 50px;
+    height: 50px;
+    width: 160px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    color: rgb(255, 255, 255);
+}
+
+button a {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a img {
+    width: 570px;
+}
+
+.photo-container {
+    display: flex;
+    text-align: center;
+}
+
+.plant-text {
+    text-transform: capitalize !important;
+    font-family: 'Times New Roman', Times, serif;
+    color: black !important;
+    font-weight: 540;
 }
