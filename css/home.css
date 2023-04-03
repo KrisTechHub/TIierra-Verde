@@ -40,7 +40,7 @@ button a {
     font-weight: 600;
 }
 
-a img {
+.left-photo img {
     width: 570px;
 }
 
@@ -49,9 +49,33 @@ a img {
     text-align: center;
 }
 
-.plant-text {
+.plant-text, h2 {
     text-transform: capitalize !important;
     font-family: 'Times New Roman', Times, serif;
     color: black !important;
-    font-weight: 540;
+    font-weight: 600;
+}
+
+.slideshow-slide img {
+    width: 280px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slideshow-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-slide.active {
+  opacity: 1;
 }
