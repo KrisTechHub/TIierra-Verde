@@ -109,9 +109,6 @@ p, ul {
     transform: scaleX(1);
 }
 
-.filter-btn:active::before {
-    visibility: visible;
-}
 
 .btn-container {
     margin-bottom: 20px;
@@ -136,7 +133,8 @@ p, ul {
 
 .menu-item:hover {
     box-shadow: 2px 2px 18px #747474;
-    transition: box-shadow 0.3s ease-in-out
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
     
 article img {

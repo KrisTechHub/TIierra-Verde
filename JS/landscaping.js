@@ -87,7 +87,7 @@ const menu = [
   
     const categoryBtns = categories
       .map(function(category) {
-        return `<button type="button" class="filter-btn" data-id=${category}>
+        return `<button type="button" class="filter-btn active" data-id=${category}>
           ${category}
         </button>`;
       })
@@ -113,20 +113,3 @@ const menu = [
     });
   }
 
-const buttons = document.getElementsByClassName(".filter-btn");
-
-function setActive(e) {
-  for (var i = 0; i < buttons.length; i++) {
-      if (buttons[i] == e) {
-        e.classList.toggle("active");
-      } else {
-        buttons[i].classList.remove('active');
-      }
-    }
-}
-
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function() {
-    setActive(this);
-  });
-}
