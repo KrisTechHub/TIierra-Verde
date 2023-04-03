@@ -128,3 +128,24 @@ button a {
 .slide {
   display: none;
 }
+
+.box {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.plant-desc {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.price {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #c19280;
+    padding: 0;
+    margin: -15px;
+}
+
