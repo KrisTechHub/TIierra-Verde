@@ -1,0 +1,68 @@
+<div class="slide fades">
+    <div class="box">
+        <img src="./images/shop/1.jpg" alt="plant">
+        <p class="plant-desc">heartleaf philodendron</p>
+        <p class="price">&#8369;300 - &#8369;500</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/2.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;500</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/3.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,000 - &#8369;1,200</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/4.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,500</p>
+    </div>
+</div>
+
+<div class="slide fades">
+    <div class="box">
+        <img src="./images/shop/1.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;800 - &#8369;1,200</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/2.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,000</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/3.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,000</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/4.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,500</p>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="box">
+        <img src="./images/shop/1.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;1,000</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/2.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;550 - &#8369;750</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/3.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;300</p>
+    </div>
+    <div class="box">
+        <img src="./images/shop/4.jpg" alt="plant">
+        <p class="plant-desc"></p>
+        <p class="price">&#8369;300 - &#8369;500</p>
+    </div>
+</div>
