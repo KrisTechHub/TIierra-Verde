@@ -1,0 +1,9 @@
+.left {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.right img {
+    width: 630px;
+}
