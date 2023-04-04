@@ -155,3 +155,12 @@ section .shop {
 .btn-container {
     text-align: center;
 }
+
+.info-container {
+    display: block;
+    flex-direction: row;
+},
+
+.box1 {
+    display: block;
+}
