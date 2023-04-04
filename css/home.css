@@ -68,19 +68,18 @@ button a {
     cursor: pointer;
     position: absolute;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
     color: rgb(73, 27, 27);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    top: 1540px;
 }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 40px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -151,4 +150,8 @@ button a {
 
 section .shop {
     margin-left: -50px;
+}
+
+.btn-container {
+    text-align: center;
 }
