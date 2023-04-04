@@ -157,10 +157,24 @@ section .shop {
 }
 
 .info-container {
-    display: block;
+    display: flex;
     flex-direction: row;
-},
+}
 
 .box1 {
     display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    color: #747474;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-weight: bold;
 }
