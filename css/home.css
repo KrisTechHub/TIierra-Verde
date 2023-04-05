@@ -179,3 +179,26 @@ h6 {
     text-transform: capitalize;
     font-weight: bold;
 }
+
+.left h5 {
+    color: #c19280;
+    text-transform: uppercase;
+}
+
+.left h2 {
+    text-transform: uppercase !important;
+}
+
+.left p {
+    color: black;
+    font-size: 18px;
+}
+
+.right img {
+    width: 550px;
+}
+
+.left button {
+    font-size: 16px;
+    font-weight: bold;
+}
