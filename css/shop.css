@@ -1,0 +1,17 @@
+.containter-fluid {
+    display: flex;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.border {
+    border-bottom: 1px solid gray;
+    width: 280px;
+}
+
+#priceRange {
+    width: 280px;
+    background-color: #c19280 !important;
+}

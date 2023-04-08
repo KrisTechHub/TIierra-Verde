@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/shop.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <title>Tierra Verde | Shop</title>
 </head>
@@ -134,14 +135,28 @@
     
 
     <main>
-        <section class="containter-fluid mt-5 pt-5 ps-5 pb-5">
-            <div class="col-6">
-                <div class="filter">
+        <section class="containter-fluid mt-5 pt-5 ps-5 pb-5 bg-light">
+            <div class="col-3 pt-5">
+                <div class="filter me-5">
                     <h6>filter by price</h6>
+                    <input type="range" min="0" max="100" value="50" step="1" id="priceRange">
+                        <div id="priceOutput"></div>
                 </div>
+                <div class="border mt-4"></div>
             </div>
-            <div class="col-6">
-
+            <div class="col-9 pt-5">
+                <ul id="priceList">
+                    <li data-price="10">Product A ($10)</li>
+                    <li data-price="20">Product B ($20)</li>
+                    <li data-price="30">Product C ($30)</li>
+                    <li data-price="40">Product D ($40)</li>
+                    <li data-price="50">Product E ($50)</li>
+                    <li data-price="60">Product F ($60)</li>
+                    <li data-price="70">Product G ($70)</li>
+                    <li data-price="80">Product H ($80)</li>
+                    <li data-price="90">Product I ($90)</li>
+                    <li data-price="100">Product J ($100)</li>
+                </ul>
             </div>
         </section>
     </main>
@@ -263,6 +278,7 @@
     </footer>
 
     <script src="/main.js"></script>
+    <script src="/JS/shop.js"></script>
     <script src="/JS/landscaping.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
