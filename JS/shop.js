@@ -10,7 +10,7 @@ priceRange.addEventListener('input', function() {
   var rangeValue = parseInt(priceRange.value);
 
   // Update output element
-  priceOutput.innerHTML = 'Price: &#8369;0 - &#8369;' + rangeValue;
+  priceOutput.innerHTML = 'Price: &#8369;300 - &#8369;' + rangeValue;
 
   // Get list items and loop through them
   var listItems = priceList.getElementsByTagName('li');
