@@ -54,8 +54,10 @@ input[type=range] {
 }
 
 .prod img {
-    height: 80px;
-    width: 60px;
+    height: 90px;
+    width: 80px;
+    padding-right: 15px;
+    cursor: pointer;
 }
 
 .prod {
@@ -64,4 +66,17 @@ input[type=range] {
 
 .fa-star {
     color: rgb(246, 187, 26);
+    font-size: 12px;
+}
+
+.prod p {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.prod .price {
+    color: #c19280;
 }
