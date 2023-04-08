@@ -74,7 +74,7 @@ button a {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    top: 1540px;
+    top: 1500px;
 }
 
 /* Position the "next button" to the right */
@@ -201,4 +201,18 @@ h6 {
 .left button {
     font-size: 16px;
     font-weight: bold;
+}
+
+.bottom-container img {
+    width: 1165px;
+}
+
+.bottom-container {
+    text-align: center;
+}
+
+.fa-instagram {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
