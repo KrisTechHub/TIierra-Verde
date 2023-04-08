@@ -80,3 +80,17 @@ input[type=range] {
 .prod .price {
     color: #c19280;
 }
+
+.head {
+    display: flex;
+}
+
+.home-shop a {
+    color:#5c5c5c;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.home-shop a:hover {
+    color: black;
+}
