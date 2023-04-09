@@ -1,4 +1,4 @@
-const menu = [
+const plants = [
     {
       id: 1,
       title: "tropical",
@@ -54,14 +54,14 @@ const menu = [
   
   //display all items when page  loads
   window.addEventListener("DOMContentLoaded", function() {
-    displayMenuItems(menu);
-    displayMenuButtons();
+    displayPlantItems(plants);
+    displayPlantButtons();
   });
   
-  displayMenuItems = (menuItems) => {
-    let displayMenu = menuItems.map(function(item) {
+  displayPlantItems = (plantItems) => {
+    let displayPlants = plantItems.map(function(item) {
   
-        return `<article class="menu-item">
+        return `<article class="plant-item">
             <img src=${item.img} alt=${item.title} class="photo"/>
             <div class="item-info">
                 <p class="item-next">${item.category}</p>
@@ -69,13 +69,13 @@ const menu = [
             </div>
       </article>`;
     });
-    displayMenu = displayMenu.join("");
+    displayPlants = displayPlants.join("");
   
-    sectionCenter.innerHTML = displayMenu;
+    sectionCenter.innerHTML = displayPlants;
   }
   
-  displayMenuButtons = () => {
-    const categories = menu.reduce(
+  displayPlantButtons = () => {
+    const categories = plants.reduce(
       function (values, item) {
         if (!values.includes(item.category)) {
           values.push(item.category);
@@ -99,15 +99,15 @@ const menu = [
     filterBtns.forEach(function(btn) {
       btn.addEventListener("click", function(e) {
         const category = e.currentTarget.dataset.id;
-        const menuCategory = menu.filter(function(menuItem) {
+        const menuCategory = plants.filter(function(menuItem) {
           if (menuItem.category === category) {
             return menuItem;
           }
         });
         if (category === "all") {
-          displayMenuItems(menu);
+          displayPlantItems(plants);
         } else {
-          displayMenuItems(menuCategory);
+          displayPlantItems(menuCategory);
         }
       });
     });

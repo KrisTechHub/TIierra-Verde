@@ -122,7 +122,7 @@ p, ul {
     grid-gap: 25px;
 }
 
-.menu-item {
+.plant-item {
     display: block;
     background-color: rgb(208, 218, 222);
     overflow: hidden;
@@ -130,7 +130,7 @@ p, ul {
     height: 350px;
 }
 
-.menu-item:hover {
+.plant-item:hover {
     box-shadow: 2px 2px 18px #747474;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
