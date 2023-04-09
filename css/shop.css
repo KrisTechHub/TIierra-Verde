@@ -94,3 +94,21 @@ input[type=range] {
 .home-shop a:hover {
     color: black;
 }
+
+.plant-item img {
+    width: 270px;
+    height: 350px;
+}
+
+.item-next {
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-center {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-gap: 20px;
+    text-align: center;
+}
