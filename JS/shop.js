@@ -31,3 +31,165 @@ priceRange.addEventListener('input', function() {
 priceRange.dispatchEvent(new Event('input'));
 
 //END
+
+//SHOPS FUNCTIONALITY
+const plants = [
+    {
+      id: 1,
+      img: "/images/shop/1.jpg",
+      name: "bamboo palm",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 2,
+      img: "/images/shop/2.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 3,
+      img: "/images/shop/3.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 4,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 5,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 6,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 7,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 8,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 9,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 10,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 11,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 12,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 13,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 14,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 15,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 16,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 17,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 18,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+        {
+      id: 19,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 20,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 21,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 22,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 23,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 24,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 25,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+    {
+      id: 26,
+      img: "/images/shop/1.jpg",
+      price: "tropical",
+      categories: ["indoor", "specials", "table", "medium", "tall", "pet", "herbs", "outdoor", "sets", "collab"],
+    },
+  ];
+  
