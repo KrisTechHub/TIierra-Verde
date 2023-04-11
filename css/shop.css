@@ -95,14 +95,28 @@ input[type=range] {
     color: black;
 }
 
+.img-container {
+    overflow: hidden;
+    box-shadow: 1px 1px 12px #bcbcbc;
+}
+
 .plant-item img {
     width: 270px;
     height: 350px;
+    transition: transform 1s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.plant-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
 }
 
 .item-next {
     text-transform: capitalize;
     font-family: 'Times New Roman', Times, serif;
+    color: black !important;
+    padding-top: 10px;
+    margin-bottom: 0px !important;    
 }
 
 .section-center {
@@ -110,5 +124,14 @@ input[type=range] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr !important;
     grid-gap: 20px;
-    text-align: center;
+    text-align: center !important;
 }
+
+.item-info p {
+    color: #c19280;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: -8px;
+    text-align: center !important;
+}
+
