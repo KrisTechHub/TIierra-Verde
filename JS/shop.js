@@ -94,7 +94,7 @@ const plants = [
       id: 9,
       img: "/images/shop/plants/20.jpg",
       name: "fiddle-leaf fig",
-      price: "3,500",
+      price: "1,500",
       categories: ["all plants", "medium", "tall"],
     },
     {
@@ -229,7 +229,7 @@ window.addEventListener("DOMContentLoaded", function() {
 displayPlantItems = (plantItems) => {
     let displayPlants = plantItems.map(function(item) {
 
-        return `<article class="plant-item" data-price=${item.price.replace(/,/g, "")};>
+        return `<article class="plant-item" id="plant" data-price=${item.price.replace(/,/g, "")};>
             <div class="img-container">
               <img src=${item.img} alt=${item.name} class="photo"/>
             </div>
@@ -243,3 +243,45 @@ displayPlantItems = (plantItems) => {
 
     sectionCenter.innerHTML = displayPlants;
 }
+
+//PAGINATION FOR 9
+const page = {
+  current: 1, // current page number
+  pageSize: 9, // number of items per page
+  totalPages: Math.ceil(data.length / 9), // total number of pages
+};
+
+function paginate(plants, page) {
+  const {current, pageSize} = page;
+  const startIndex = (current - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+
+  return plants.slice(startIndex, endIndex);
+}
+
+function render(plant) {
+  document.getElementById('plant').innerHTML = '';
+
+  plant.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.id}: ${item.name}`;
+    document.getElementById('plant').appendChild(li);
+  });
+}
+
+render(paginate(plants, page));
+
+// Pagination controls
+document.getElementById('prev').addEventListener('click', () => {
+  if (page.current > 1) {
+    page.current--;
+    render(paginate(plant, page));
+  }
+});
+
+document.getElementById('next').addEventListener('click', () => {
+  if (page.current < page.totalPages) {
+    page.current++; 
+    render(paginate(plant, page));
+  }
+});
