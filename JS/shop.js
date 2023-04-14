@@ -13,7 +13,7 @@ priceRange.addEventListener('input', function() {
   priceOutput.innerHTML = 'Price: &#8369;300 - &#8369;' + rangeValue;
 
   // Get list items and loop through them
-  var listItems = priceList.getElementsByTagName('li');
+  var listItems = priceList.getElementsByTagName('article');
   for (var i = 0; i < listItems.length; i++) {
     var listItem = listItems[i];
     var price = parseInt(listItem.getAttribute('data-price'));
@@ -229,13 +229,13 @@ window.addEventListener("DOMContentLoaded", function() {
 displayPlantItems = (plantItems) => {
     let displayPlants = plantItems.map(function(item) {
 
-        return `<article class="plant-item">
+        return `<article class="plant-item" data-price=${item.price.replace(/,/g, "")};>
             <div class="img-container">
               <img src=${item.img} alt=${item.name} class="photo"/>
             </div>
             <div class="item-info">
                 <p class="item-next">${item.name}</p>
-                <p data-price=${item.price}>&#8369;${item.price}</p>
+                <p>&#8369;${item.price}</p>
             </div>
         </article>`;        
     });

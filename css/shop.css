@@ -95,6 +95,11 @@ input[type=range] {
     color: black;
 }
 
+a .shopp {
+    font-weight: bolder !important;
+    color: black !important;
+}
+
 .img-container {
     overflow: hidden;
     box-shadow: 1px 1px 12px #bcbcbc;
