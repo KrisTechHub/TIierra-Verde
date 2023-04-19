@@ -123,7 +123,7 @@ a .shopp {
     margin-bottom: 0px !important;    
 }
 
-.section-center {
+.priceList {
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr !important;

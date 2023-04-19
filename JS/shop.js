@@ -2,7 +2,6 @@
 // Get range input element, output element, and list element
 const priceRange = document.getElementById('priceRange');
 const priceOutput = document.getElementById('priceOutput');
-const priceList = document.getElementsByClassName("priceList");
 
 // Add event listener for input changes
 priceRange.addEventListener('input', function() {
@@ -13,7 +12,7 @@ priceRange.addEventListener('input', function() {
   priceOutput.innerHTML = 'Price: &#8369;300 - &#8369;' + rangeValue;
 
   // Get list items and loop through them
-  var listItems = priceList.getElementsByTagName('article');
+  var listItems = productList.getElementsByTagName('article');
   for (var i = 0; i < listItems.length; i++) {
     var listItem = listItems[i];
     var price = parseInt(listItem.getAttribute('data-price'));
