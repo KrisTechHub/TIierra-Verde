@@ -243,3 +243,5 @@ displayPlantItems = (plantItems) => {
 
     sectionCenter.innerHTML = displayPlants;
 }
+
+//PRODUCTS PAGINATION
