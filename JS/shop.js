@@ -242,6 +242,35 @@ displayPlantItems = (plantItems) => {
     displayPlants = displayPlants.join("");
 
     sectionCenter.innerHTML = displayPlants;
-}
+};
+
 
 //PRODUCTS PAGINATION
+
+const productsPerPage = 12;
+
+const productList = document.getElementById('product-list');
+const pagination = document.getElementById('pagination');
+
+function displayProducts(plants, page) {
+  const startIndex = (page - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
+  productList.innerHTML = ''; // Clear previous products from display
+
+  // Loop through products to display and add to HTML
+  for (let i= startIndex; i < endIndex && i < plants.length; i++) {
+    const plant = plants[i];
+    productList.innerHTML += `
+    <article class="plant-item" id="plant" data-price=${item.price.replace(/,/g, "")};>
+      <div class="img-container">
+        <img src=${item.img} alt=${item.name} class="photo"/>
+      </div>
+      <div class="item-info">
+          <p class="item-next">${item.name}</p>
+          <p>&#8369;${item.price}</p>
+      </div>  
+    </article>
+    `
+  }
+}
