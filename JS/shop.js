@@ -38,7 +38,7 @@ priceRange.dispatchEvent(new Event('input'));
 //SHOPS FUNCTIONALITY
 
 // Define number of products to display per page
-const productsPerPage = 12;
+const productsPerPage = 9;
 
 // Get product list and pagination elements from HTML
 const productList = document.getElementById('product-list');
