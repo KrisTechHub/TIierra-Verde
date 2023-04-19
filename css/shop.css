@@ -139,3 +139,22 @@ a .shopp {
     text-align: center !important;
 }
 
+
+#pagination {
+    width: 35px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 52%;
+}
+
+#pagination a:hover {
+    background-color:#bcbcbc;
+}
+
+#pagination a {
+    color: white !important;
+    background-color: #c19280;
+    margin-right: 5px;
+    border-radius: 50px;
+}
