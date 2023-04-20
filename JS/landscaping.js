@@ -82,7 +82,7 @@ const plants = [
         }
         return values;
       },
-      ["all"]
+      ["all plants"]
     );
   
     const categoryBtns = categories
