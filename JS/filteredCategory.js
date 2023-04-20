@@ -242,12 +242,12 @@ const products = [
         }
         return values;
       },
-      ["all"]
+      ["all plants"]
     );
   
     const categoryBtns = categories.map(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;}).slice();
+          ${category}</button>`;});
   
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
@@ -260,8 +260,8 @@ const products = [
             return plantItem;
           }
         });
+        });
       });
-    });
-  }
+    };
 
 
