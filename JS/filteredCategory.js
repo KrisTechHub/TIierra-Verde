@@ -247,7 +247,7 @@ const products = [
   
     const categoryBtns = categories.map(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;}).slice(",");
+          ${category}</button>`;}).slice();
   
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
