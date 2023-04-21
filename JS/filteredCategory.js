@@ -230,8 +230,6 @@ const products = [
   // Display initial products and pagination on page load
 
 
-
-
   const btnContainer = document.querySelector(".btn-container");
 
   displayPlantButtons = () => {
@@ -246,9 +244,11 @@ const products = [
     );
   
     
-    const categoryBtns = categories.map(function(category) {
+    const categoryBtns = categories.concat(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;}).join("");
+          ${category}</button>`;
+
+        });
 
   
     btnContainer.innerHTML = categoryBtns;
