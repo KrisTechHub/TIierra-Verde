@@ -12,7 +12,7 @@ const pagination = document.getElementById('pagination');
 window.addEventListener("DOMContentLoaded", function() {
     displayProducts(products, 1);
     displayPagination(products, 1);
-    displayPlantButtons();
+    displayPlantButtons(itemCategory);
   });
 
 // Set up function to display products for current page
@@ -247,7 +247,7 @@ const products = [
   
     const categoryBtns = categories.map(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;});
+          ${category}</button>`;}).slice("");
   
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
