@@ -26,8 +26,6 @@ let comment = document.getElementById("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("submitted form");
-
   formValidation();
 });
 

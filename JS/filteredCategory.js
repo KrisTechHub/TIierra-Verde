@@ -12,7 +12,7 @@ const pagination = document.getElementById('pagination');
 window.addEventListener("DOMContentLoaded", function() {
     displayProducts(products, 1);
     displayPagination(products, 1);
-    displayPlantButtons(itemCategory);
+    displayPlantButtons();
   });
 
 // Set up function to display products for current page
@@ -245,9 +245,11 @@ const products = [
       ["all plants"]
     );
   
+    
     const categoryBtns = categories.map(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;}).slice("");
+          ${category}</button>`;}).join("");
+
   
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
@@ -260,6 +262,11 @@ const products = [
             return plantItem;
           }
         });
+        if (category === "all") {
+            displayPlantItems(plants);
+          } else {
+            displayPlantItems(menuCategory);
+          }
         });
       });
     };
