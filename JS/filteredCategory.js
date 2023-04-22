@@ -243,15 +243,18 @@ const products = [
       ["all plants"]
     );
   
-    
-    const categoryBtns = categories.concat(function(category) {
+    9
+    const categoryBtns = categories.map(function(category) {
         return `<button type="button" class="filter-btn active" data-id=${category}>
           ${category}</button>`;
-
         });
 
-  
-    btnContainer.innerHTML = categoryBtns;
+    const allplants(plant) => {
+        if (values.includes(categories.herbs)) {
+            return values;
+        }
+
+    btnContainer.innerHTML = allplants;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
     
     filterBtns.forEach(function(btn) {
