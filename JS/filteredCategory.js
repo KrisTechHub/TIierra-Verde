@@ -243,7 +243,7 @@ for (const product of products) {
 const categorySelect = document.querySelector('#category')
 
 for (const cat of categories) {
-    const option = document.createElement('a')
+    const option = document.createElement("a")
     option.append(cat)
     categorySelect.appendChild(option)
 }
