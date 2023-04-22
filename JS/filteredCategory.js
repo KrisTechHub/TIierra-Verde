@@ -229,49 +229,23 @@ const products = [
 
   // Display initial products and pagination on page load
 
+const categories = [];
 
-  const btnContainer = document.querySelector(".btn-container");
-
-  displayPlantButtons = () => {
-    const categories = products.reduce(
-      function (values, item) {
-        if (!values.includes(item.categories)) {
-          values.push(item.categories);
+for (const product of products) {
+    for (const cat of product.categories) {
+        const isExists = categories.includes(cat)
+        if (!isExists) {
+            categories.push(cat)
         }
-        return values;
-      },
-      ["all plants"]
-    );
-  
-    9
-    const categoryBtns = categories.map(function(category) {
-        return `<button type="button" class="filter-btn active" data-id=${category}>
-          ${category}</button>`;
-        });
+    }
+}
 
-    const allplants(plant) => {
-        if (values.includes(categories.herbs)) {
-            return values;
-        }
+const categorySelect = document.querySelector('#category')
 
-    btnContainer.innerHTML = allplants;
-    const filterBtns = btnContainer.querySelectorAll(".filter-btn");
-    
-    filterBtns.forEach(function(btn) {
-      btn.addEventListener("click", function(e) {
-        const category = e.currentTarget.dataset.id;
-        const itemCategory = products.filter(function(plantItem) {
-          if (plantItem.categories === categories) {
-            return plantItem;
-          }
-        });
-        if (category === "all") {
-            displayPlantItems(plants);
-          } else {
-            displayPlantItems(menuCategory);
-          }
-        });
-      });
-    };
+for (const cat of categories) {
+    const option = document.createElement('a')
+    option.append(cat)
+    categorySelect.appendChild(option)
+}
 
-
+console.log('categories', categories);
