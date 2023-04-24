@@ -1,7 +1,14 @@
 //PRICE RANGE FUNCTIONALITY
+
 // Get range input element, output element, and list element
 const priceRange = document.getElementById('priceRange');
 const priceOutput = document.getElementById('priceOutput');
+// Define number of products to display per page
+const productsPerPage = 9;
+
+// Get product list and pagination elements from HTML
+const productList = document.getElementById('product-list');
+const pagination = document.getElementById('pagination');
 
 // Add event listener for input changes
 priceRange.addEventListener('input', function() {
@@ -34,6 +41,37 @@ priceRange.dispatchEvent(new Event('input'));
 
 
 //PAGINATION
+
+window.addEventListener("DOMContentLoaded", function() {
+    displayProducts(products, 1);
+    displayPagination(products, 1);
+  });
+
+// Set up function to display products for current page
+function displayProducts(products, page) {
+  // Calculate starting and ending indexes for products on current page
+  const startIndex = (page - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
+  // Clear previous products from display
+  productList.innerHTML = '';
+
+  // Loop through products to display and add to HTML
+  for (let i = startIndex; i < endIndex && i < products.length; i++) {
+    const product = products[i];
+    productList.innerHTML += `
+    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")};>
+      <div class="img-container">
+        <img src=${product.img} alt=${product.name} class="photo"/>
+      </div>
+      <div class="item-info">
+          <p class="item-next">${product.name}</p>
+          <p>&#8369;${product.price}</p>
+      </div>  
+    </article>
+    `;
+  }
+}
 
 // Set up function to display pagination links
 function displayPagination(products, currentPage) {
