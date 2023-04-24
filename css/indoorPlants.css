@@ -1,5 +1,8 @@
 #category a {
-    display: flex;
     cursor: pointer;
     text-transform: capitalize;
+}
+
+#category{
+    flex-direction: column;
 }

@@ -19,4 +19,14 @@ for (const cat of categories) {
     categorySelect.appendChild(option)
 }
 
-console.log('categories', categories);
+const showDiv = document.querySelector('.showDiv')
+
+showDiv.addEventListener("click", (e) => {
+    if (categorySelect.style.display === "flex") {
+        categorySelect.style.display = "none";
+    } else {
+        categorySelect.style.display = "flex";
+        categorySelect.style.flexdirection = "column";
+    }
+
+});
