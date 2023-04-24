@@ -17,6 +17,8 @@ for (const cat of categories) {
     const option = document.createElement("a")
     option.append(cat)
     categorySelect.appendChild(option)
+
+
 }
 
 const showDiv = document.querySelector('.showDiv')
@@ -27,6 +29,13 @@ showDiv.addEventListener("click", (e) => {
     } else {
         categorySelect.style.display = "flex";
         categorySelect.style.flexdirection = "column";
+    };
+
+    const selectedCategory = showDiv.value;
+
+    for (let i = 0; i < products.length; i++) {
+        const item = products[i]
     }
 
 });
+
