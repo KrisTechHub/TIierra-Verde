@@ -246,6 +246,8 @@ for (const cat of categories) {
     const option = document.createElement("a")
     option.append(cat)
     categorySelect.appendChild(option)
+
+    option.setAttribute("href", "http://127.0.0.1:5501/nav%20pages/shop/all%20plants/indoorPlants.html")
 }
 
 console.log('categories', categories);
