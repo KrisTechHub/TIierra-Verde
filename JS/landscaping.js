@@ -99,15 +99,15 @@ const plants = [
     filterBtns.forEach(function(btn) {
       btn.addEventListener("click", function(e) {
         const category = e.currentTarget.dataset.id;
-        const menuCategory = plants.filter(function(menuItem) {
-          if (menuItem.category === category) {
-            return menuItem;
+        const plantCategory = plants.filter(function(plantItem) {
+          if (plantItem.category === category) {
+            return plantItem;
           }
         });
         if (category === "all") {
           displayPlantItems(plants);
         } else {
-          displayPlantItems(menuCategory);
+          displayPlantItems(plantCategory);
         }
       });
     });

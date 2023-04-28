@@ -18,6 +18,27 @@ const categorySelect = document.querySelector('#category')
         option.append(cat)
         categorySelect.appendChild(option)
 
+        option.classList.add("filterbtn");
+    
+        const filterBtn = document.querySelectorAll(".filter-btn");
+
+        filterBtn.forEach(function(btns) {
+            btns.addEventListener("click", function(e) {
+                const category = e.currentTarget.dataset.id;
+                const plantCategory = products.filter(function(plantsItem) {
+                    if (plantsItem.category === category) {
+                      return plantsItem;
+                    }
+                });
+                
+                if (category === "all plants") {
+                    displayProducts(products, 1)
+                } else {
+                    displayPlantItems(plantCategory, 1);
+                }
+            })
+        })
+
 }
 
 
@@ -33,4 +54,3 @@ showDiv.addEventListener("click", (e) => {
 
 
 });
-
