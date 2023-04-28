@@ -31,11 +31,7 @@ showDiv.addEventListener("click", (e) => {
         categorySelect.style.flexdirection = "column";
     };
 
-    const selectedCategory = showDiv.value;
 
-    for (let i = 0; i < products.length; i++) {
-        const item = products[i]
-    }
 
 });
 
