@@ -102,8 +102,9 @@ const plants = [
         const plantCategory = plants.filter(function(plantItem) {
           if (plantItem.category === category) {
             return plantItem;
-          }
+          } 
         });
+
         if (category === "all") {
           displayPlantItems(plants);
         } else {
@@ -111,5 +112,6 @@ const plants = [
         }
       });
     });
+
   }
 
