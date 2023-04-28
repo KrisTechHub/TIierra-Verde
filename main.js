@@ -24,7 +24,7 @@ let names = document.getElementById("name");
 let email = document.getElementById("email");
 let comment = document.getElementById("input");
 
-form.addEventListener("submit", (e) => {
+form?.addEventListener("submit", (e) => {
   e.preventDefault();
   formValidation();
 });

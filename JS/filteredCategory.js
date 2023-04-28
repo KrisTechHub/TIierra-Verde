@@ -13,7 +13,7 @@ for (const product of products) {
 
 const categorySelect = document.querySelector('#category')
 for (const cat of categories) {
-    const option = document.createElement("a")
+    const option = document.createElement("button")
     option.append(cat)
     categorySelect.appendChild(option)
 
@@ -33,13 +33,14 @@ showDiv.addEventListener("click", () => {
 });
 
 
-const filterBtn = document.getElementsByClassName(".filter-btn");
-filterBtn.addEventListener("click", (e) => {
+const filterBtn = document.querySelector(".filter-btn");
+filterBtn?.addEventListener("click", (e) => {
         const category = e.currentTarget.dataset.id;
-        const plantCategory = plants.filter(function(plantItem) {
-        if (plantItem.category === category) {
-            return plantItem;
-        } 
+        const plantCategory = products.filter(function(plantItem) {
+            if (plantItem.categories === category) {
+                console.log("clicked");
+                return plantItem;
+            } 
         });
 
 
@@ -48,6 +49,6 @@ filterBtn.addEventListener("click", (e) => {
         } else {
         displayPlantItems(plantCategory);
         }
-       
+        console.log("working");
+
 });
-console.log("working");
