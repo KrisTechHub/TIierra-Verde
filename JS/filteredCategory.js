@@ -11,7 +11,7 @@ showDiv.addEventListener("click", () => {
 
 
 
-const categorySelect = document.querySelector('#category');
+const categorySelect = document.querySelector('#catbtn-container');
 const categories = [];
 for (const product of products) {
     for (const cat of product.categories) {
@@ -25,6 +25,7 @@ for (const product of products) {
 };
 
 
+const filterBtn = categorySelect.querySelectorAll(".filterbtn");
 
 for (const cat of categories) {
     const optionBtn = document.createElement("button")
@@ -34,35 +35,30 @@ for (const cat of categories) {
     optionBtn.classList.add("filterbtn");
     optionBtn.setAttribute("data-id", cat);
     optionBtn.setAttribute("type", "button");
-    optionBtn.setAttribute("onclick", filteredProds(catName));
+
+
+
+    filterBtn.forEach(function(btn) {
+        btn.addEventListener("click", function(e) {
+          const category = e.currentTarget.dataset.id;
+          const plantCategory = products.filter(function(plantItem) {
+            if (cat === category) {
+              return plantItem;
+            } 
+          });
+    
+          if (category === "all") {
+            displayProducts(products, 1);
+            displayPagination(products, 1);
+          } else {
+            displayPlantItems(plantCategory);
+          }
+        });
+      });
+
+
 };
 
 
-function filteredProds(catName) {
-    let filteredProds = []
-    for (let index = 0; index < products.length; index++) {
-        if (products[index].cat === "pet") {
-            filteredProds.push(products[i])
-        }
-    }
-    filteredProds(catName);
-}
 
-const filterBtn = categorySelect.querySelectorAll(".filterbtn");
 
-filterBtn.forEach(function(btn) {
-    btn.addEventListener("click", function(e) {
-      const category = e.currentTarget.dataset.id;
-      const plantCategory = plants.filter(function(plantItem) {
-        if (plantItem.category === category) {
-          return plantItem;
-        } 
-      });
-
-      if (category === "all") {
-        displayPlantItems(plants);
-      } else {
-        displayPlantItems(plantCategory);
-      }
-    });
-  });
