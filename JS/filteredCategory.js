@@ -7,6 +7,8 @@ showDiv.addEventListener("click", () => {
         categorySelect.style.display = "flex";
         categorySelect.style.flexDirection = "column";
     };
+
+    catButtons();
 });
 
 
@@ -24,8 +26,7 @@ for (const product of products) {
     }
 };
 
-
-const filterBtn = categorySelect.querySelectorAll(".filterbtn");
+catButtons = () => {
 
 for (const cat of categories) {
     const optionBtn = document.createElement("button")
@@ -33,28 +34,28 @@ for (const cat of categories) {
     categorySelect.appendChild(optionBtn)
 
     optionBtn.classList.add("filterbtn");
-    optionBtn.setAttribute("data-id", cat);
+    optionBtn.setAttribute("data-category", cat);
     optionBtn.setAttribute("type", "button");
+}
+
+const filterBtn = categorySelect.querySelectorAll(".filterbtn");
 
 
+    filterBtn.addEventListener("click", function(e) {
+        const category = e.currentTarget.dataset.id;
+        const plantCategory = products.filter(function(plantItem) {
+        if (cat === category) {
+            return plantItem;
+        } 
+        });
 
-    filterBtn.forEach(function(btn) {
-        btn.addEventListener("click", function(e) {
-          const category = e.currentTarget.dataset.id;
-          const plantCategory = products.filter(function(plantItem) {
-            if (cat === category) {
-              return plantItem;
-            } 
-          });
-    
-          if (category === "all") {
-            displayProducts(products, 1);
-            displayPagination(products, 1);
+        if (cat === "all plants") {
+            displayPlantItems(plants);
           } else {
             displayPlantItems(plantCategory);
           }
-        });
-      });
+
+    });
 
 
 };
