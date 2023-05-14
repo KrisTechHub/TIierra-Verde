@@ -28,19 +28,16 @@ for (const product of products) {
 
 
 for (const cat of categories) {
-    const optionBtn = document.createElement("button")
+    const optionBtn = document.createElement("li")
     optionBtn.append(cat)
     categorySelect.appendChild(optionBtn)
 
-    optionBtn.classList.add("filterbtn");
     optionBtn.setAttribute("onclick", `showItems(${cat})`);
-    optionBtn.setAttribute("data-category", cat);
     optionBtn.setAttribute("type", "button");
 
     console.log(cat)
 }
 
-const filterBtn = categorySelect.querySelector(".filterbtn");
 
 function showItems(cat) {
     const items = categorySelect.getElementsByTagName("button");
@@ -54,6 +51,8 @@ function showItems(cat) {
             items[i].style.display = "none";
         }
     }
+
+    console.log("button clicked");
 }
 
 
