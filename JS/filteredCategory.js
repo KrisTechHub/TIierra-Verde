@@ -1,3 +1,5 @@
+const categorySelect = document.querySelector('#catbtn-container');
+  
   // Display initial products and pagination on page load
 const showDiv = document.querySelector('.showDiv')
 showDiv.addEventListener("click", () => {
@@ -8,12 +10,11 @@ showDiv.addEventListener("click", () => {
         categorySelect.style.flexDirection = "column";
     };
 
-    catButtons();
+
 });
 
 
 
-const categorySelect = document.querySelector('#catbtn-container');
 const categories = [];
 for (const product of products) {
     for (const cat of product.categories) {
@@ -22,11 +23,9 @@ for (const product of products) {
             categories.push(cat)
         };
 
-
     }
 };
 
-catButtons = () => {
 
 for (const cat of categories) {
     const optionBtn = document.createElement("button")
@@ -34,31 +33,28 @@ for (const cat of categories) {
     categorySelect.appendChild(optionBtn)
 
     optionBtn.classList.add("filterbtn");
+    optionBtn.setAttribute("onclick", `showItems(${cat})`);
     optionBtn.setAttribute("data-category", cat);
     optionBtn.setAttribute("type", "button");
+
+    console.log(cat)
 }
 
-const filterBtn = categorySelect.querySelectorAll(".filterbtn");
+const filterBtn = categorySelect.querySelector(".filterbtn");
 
+function showItems(cat) {
+    const items = categorySelect.getElementsByTagName("button");
 
-    filterBtn.addEventListener("click", function(e) {
-        const category = e.currentTarget.dataset.id;
-        const plantCategory = products.filter(function(plantItem) {
-        if (cat === category) {
-            return plantItem;
-        } 
-        });
+    for (let i = 0; i < items.length; i++) {
+        const itemCategory = items[i].getAttribute("data-category");
 
-        if (cat === "all plants") {
-            displayPlantItems(plants);
-          } else {
-            displayPlantItems(plantCategory);
-          }
-
-    });
-
-
-};
+        if (itemCategory === cat) {
+            items[i].style.display = "flex";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
 
 
 
