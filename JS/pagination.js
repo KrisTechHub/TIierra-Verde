@@ -56,11 +56,14 @@ function displayProducts(products, page) {
   // Clear previous products from display
   productList.innerHTML = '';
 
+  
+
   // Loop through products to display and add to HTML
   for (let i = startIndex; i < endIndex && i < products.length; i++) {
     const product = products[i];
+    const cat = product.categories[i];
     productList.innerHTML += `
-    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")};>
+    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")} data-category=${cat};>
       <div class="img-container">
         <img src=${product.img} alt=${product.name} class="photo"/>
       </div>
@@ -71,6 +74,9 @@ function displayProducts(products, page) {
     </article>
     `;
   }
+
+  const prod = div.getElementsByTagName("article");
+  prod.setAttribute("data-category", `${cat}`)
 }
 
 // Set up function to display pagination links

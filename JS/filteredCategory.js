@@ -10,7 +10,6 @@ showDiv.addEventListener("click", () => {
         categorySelect.style.flexDirection = "column";
     };
 
-
 });
 
 
@@ -28,19 +27,19 @@ for (const product of products) {
 
 
 for (const cat of categories) {
-    const optionBtn = document.createElement("li")
+    const optionBtn = document.createElement("button")
     optionBtn.append(cat)
     categorySelect.appendChild(optionBtn)
 
     optionBtn.setAttribute("onclick", `showItems(${cat})`);
     optionBtn.setAttribute("type", "button");
+    
 
-    console.log(cat)
 }
 
 
 function showItems(cat) {
-    const items = categorySelect.getElementsByTagName("button");
+    const items = categorySelect.getElementsByTagName("article");
 
     for (let i = 0; i < items.length; i++) {
         const itemCategory = items[i].getAttribute("data-category");
@@ -49,10 +48,9 @@ function showItems(cat) {
             items[i].style.display = "flex";
         } else {
             items[i].style.display = "none";
-        }
+        };
     }
 
-    console.log("button clicked");
 }
 
 
