@@ -63,7 +63,7 @@ function displayProducts(products, page) {
     const product = products[i];
     const cat = product.categories[i];
     productList.innerHTML += `
-    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")} data-category=${cat};>
+    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")} data-category=${product.categories};>
       <div class="img-container">
         <img src=${product.img} alt=${product.name} class="photo"/>
       </div>
@@ -75,8 +75,6 @@ function displayProducts(products, page) {
     `;
   }
 
-  const prod = div.getElementsByTagName("article");
-  prod.setAttribute("data-category", `${cat}`)
 }
 
 // Set up function to display pagination links
