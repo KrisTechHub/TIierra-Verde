@@ -55,15 +55,13 @@ function displayProducts(products, page) {
 
   // Clear previous products from display
   productList.innerHTML = '';
-
   
 
   // Loop through products to display and add to HTML
   for (let i = startIndex; i < endIndex && i < products.length; i++) {
     const product = products[i];
-    const cat = product.categories[i];
     productList.innerHTML += `
-    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")} data-category=${product.categories};>
+    <article class="plant-item" id="plant" data-price=${product.price.replace(/,/g, "")} data-category=${JSON.parse(product.categories)};>
       <div class="img-container">
         <img src=${product.img} alt=${product.name} class="photo"/>
       </div>
