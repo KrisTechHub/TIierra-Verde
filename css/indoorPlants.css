@@ -1,9 +1,0 @@
-#catbtn-container button {
-    cursor: pointer;
-    text-transform: capitalize;
-    width: 100px;
-}
-
-.filterbtn:hover {
-    opacity: 0.8;
-}

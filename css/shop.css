@@ -47,7 +47,7 @@ input[type=range] {
   }
   
 
-.categ p{
+.categ p, label{
     color: #5c5c5c;
     font-size: 14px;
     cursor: pointer;
@@ -157,4 +157,31 @@ a .shopp {
     background-color: #c19280;
     margin-right: 5px;
     border-radius: 50px;
+}
+
+.showDiv {
+    margin-left: 40%;
+    color: #5c5c5c;
+    border: none;
+}
+
+.showDiv:hover {
+    font-weight: bolder;
+}
+
+#catbtn-container button {
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 100px;
+    border: transparent;
+    background-color: transparent;
+    text-align: start;
+}
+
+#catbtn-container button:hover {
+    opacity: 0.8;
+}
+
+.filterbtn:hover {
+    opacity: 0.8;
 }
