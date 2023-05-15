@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/indoorPlants.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <title>Tierra Verde | Shop</title>
 </head>
@@ -151,11 +152,15 @@
                     <h6 class="pb-4">product categories</h6>
                     <p>Accessories</p>
                     <p>Gifts</p>
-                    <div class="all-plants">
-                        <p>All Plants</p>
-                        <div class="btn-container"></div>
 
+                    <div>
+                        <label for="category">Select a category:</label>
+                        <select class="showDiv"></select>
+                            <div id="catbtn-container" style="display:none;">
+                                
+                            </div>
                     </div>
+
                 </div>
 
                 <div class="border mt-4"></div>
@@ -353,8 +358,8 @@
 
     <script src="/main.js"></script>
     <script src="/JS/pagination.js"></script>
-    <script src="/JS/shop.js"></script>
-    <script src="/JS/items.js"></script>
+    <script src="/JS/data.js"></script>
+    <script src="/JS/filteredCategory.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

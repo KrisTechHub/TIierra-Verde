@@ -10,7 +10,6 @@ showDiv.addEventListener("click", () => {
         categorySelect.style.flexDirection = "column";
     };
 
-    showItems(cat);
 });
 
 
@@ -32,29 +31,32 @@ for (const cat of categories) {
     optionBtn.append(cat)
     categorySelect.appendChild(optionBtn)
 
-    optionBtn.setAttribute("onclick", `showItems(${cat})`);
+    optionBtn.setAttribute("onclick", `showItems("${cat}")`);
     optionBtn.setAttribute("type", "button");
     
-
 }
 
+var listItems = productList.getElementsByTagName('article');
 
 function showItems(cat) { 
-    const items = productList.getElementsByTagName("article");
 
-    for (let i = 0; i < items.length; i++) {
-        const itemCategory = items[i].getAttribute("data-category");
-
-        if (itemCategory === cat) {
-            items[i].style.display = "flex";
+    for (let i = 0; i < listItems.length; i++) {
+        const itemCategory = listItems[i].getAttribute("data-category");        
+          
+        if (itemCategory.includes(cat)) {
+            listItems[i].style.display = "flex";
+            listItems[i].style.flexDirection = "column";
         } else {
-            items[i].style.display = "none";
+            listItems[i].style.display = "none";
+        }        
+        console.log(itemCategory.includes(cat));
+
+
         };
 
-        console.log("clicked")
     }
 
-}
+
 
 
 
