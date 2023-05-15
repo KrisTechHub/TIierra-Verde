@@ -28,12 +28,17 @@ for (const product of products) {
 
 for (const cat of categories) {
     const optionBtn = document.createElement("button")
+    const numOfItems = document.createElement("div")
     optionBtn.append(cat)
+    categorySelect.append(numOfItems)
+
     categorySelect.appendChild(optionBtn)
 
     optionBtn.setAttribute("onclick", `showItems("${cat}")`);
     optionBtn.setAttribute("type", "button");
-    
+    numOfItems.setAttribute("id", "numOfItems");
+
+    numOfItems.innerHTML = cat.length;
 }
 
 var listItems = productList.getElementsByTagName('article');
@@ -49,12 +54,9 @@ function showItems(cat) {
         } else {
             listItems[i].style.display = "none";
         }        
-        console.log(itemCategory.includes(cat));
+    };
 
-
-        };
-
-    }
+}
 
 
 

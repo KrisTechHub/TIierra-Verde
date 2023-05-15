@@ -162,24 +162,43 @@ a .shopp {
 .showDiv {
     margin-left: 40%;
     color: #5c5c5c;
-    border: none;
+    border: transparent;
 }
 
 .showDiv:hover {
     font-weight: bolder;
 }
 
+#catbtn-container {
+    flex-direction: column;
+
+}
+
 #catbtn-container button {
     cursor: pointer;
     text-transform: capitalize;
-    width: 100px;
     border: transparent;
     background-color: transparent;
     text-align: start;
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 #catbtn-container button:hover {
-    opacity: 0.8;
+    color: black;
+}
+
+#catbtn-container div {
+    width: 25px;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-right: 0;
+    color: black;
+    background-color: transparent;
+    display:block;
 }
 
 .filterbtn:hover {
