@@ -1,6 +1,6 @@
 const categorySelect = document.querySelector('#catbtn-container');
-  
-  // Display initial products and pagination on page load
+
+// Display initial products and pagination on page load
 const showDiv = document.querySelector('.showDiv')
 showDiv.addEventListener("click", () => {
     if (categorySelect.style.display === "flex") {
@@ -12,6 +12,7 @@ showDiv.addEventListener("click", () => {
 
 });
 
+const categoryCounts = {};
 
 
 const categories = [];
@@ -22,44 +23,54 @@ for (const product of products) {
             categories.push(cat)
         };
 
+        if (categoryCounts[cat]) {
+            categoryCounts[cat]++;
+        } else {
+            categoryCounts[cat] = 1;
+        }
     }
+
 };
 
 
 for (const cat of categories) {
     const optionBtn = document.createElement("button")
-    const numOfItems = document.createElement("div")
     optionBtn.append(cat)
-    categorySelect.append(numOfItems)
+    const numOfItems = document.createElement("div");
+
 
     categorySelect.appendChild(optionBtn)
 
     optionBtn.setAttribute("onclick", `showItems("${cat}")`);
     optionBtn.setAttribute("type", "button");
-    numOfItems.setAttribute("id", "numOfItems");
 
-    numOfItems.innerHTML = cat.length;
+    optionBtn.appendChild(numOfItems)
+    numOfItems.setAttribute("id", "numOfItems");
 }
+
+
+const itemsNum = document.querySelectorAll('#numOfItems');
+const values = Object.values(categoryCounts);
+
+for (let i = 0; i < itemsNum.length; i++) {
+    itemsNum[i].innerText = values[i];
+}
+
+
 
 var listItems = productList.getElementsByTagName('article');
 
-function showItems(cat) { 
+function showItems(cat) {
 
     for (let i = 0; i < listItems.length; i++) {
-        const itemCategory = listItems[i].getAttribute("data-category");        
-          
+        const itemCategory = listItems[i].getAttribute("data-category");
+
         if (itemCategory.includes(cat)) {
             listItems[i].style.display = "flex";
             listItems[i].style.flexDirection = "column";
         } else {
             listItems[i].style.display = "none";
-        }        
+        }
     };
 
 }
-
-
-
-
-
-

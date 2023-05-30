@@ -27,27 +27,28 @@ input[type=range] {
     width: 105%;
     height: 10px;
     margin: 10px 0;
-  }
-  
-  /* Set track color */
-  input[type=range]::-webkit-slider-runnable-track {
+}
+
+/* Set track color */
+input[type=range]::-webkit-slider-runnable-track {
     width: 200px;
     height: 2px;
     background-color: #c19280 !important;
-  }
-  
-  /* Set thumb appearance */
-  input[type=range]::-webkit-slider-thumb {
+}
+
+/* Set thumb appearance */
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 5px;
     height: 16px;
     background: #c19280;
     cursor: pointer;
     margin-top: -7px;
-  }
-  
+}
 
-.categ p, label{
+
+.categ p,
+label {
     color: #5c5c5c;
     font-size: 14px;
     cursor: pointer;
@@ -86,7 +87,7 @@ input[type=range] {
 }
 
 .home-shop a {
-    color:#5c5c5c;
+    color: #5c5c5c;
     font-weight: 600;
     font-size: 13px;
 }
@@ -120,7 +121,7 @@ a .shopp {
     font-family: 'Times New Roman', Times, serif;
     color: black !important;
     padding-top: 10px;
-    margin-bottom: 0px !important;    
+    margin-bottom: 0px !important;
 }
 
 .priceList {
@@ -149,7 +150,7 @@ a .shopp {
 }
 
 #pagination a:hover {
-    background-color:#bcbcbc;
+    background-color: #bcbcbc;
 }
 
 #pagination a {
@@ -162,16 +163,16 @@ a .shopp {
 .showDiv {
     margin-left: 40%;
     color: #5c5c5c;
-    border: transparent;
+    border: none;
+    background-color: transparent;
 }
 
 .showDiv:hover {
     font-weight: bolder;
 }
 
-#catbtn-container {
-    flex-direction: column;
-
+.showDiv::after {
+    border: none;
 }
 
 #catbtn-container button {
@@ -179,26 +180,26 @@ a .shopp {
     text-transform: capitalize;
     border: transparent;
     background-color: transparent;
-    text-align: start;
+    justify-content: space-between;
     color: #5c5c5c;
     font-size: 14px;
     margin-left: 20px;
     margin-top: 10px;
+    display: flex;
 }
 
 #catbtn-container button:hover {
     color: black;
 }
 
-#catbtn-container div {
-    width: 25px;
-    height: 20px;
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-right: 0;
-    color: black;
+button div {
+    border-radius: 50%;
+    border: none;
     background-color: transparent;
-    display:block;
+    display: flex;
+    text-align: end;
+    margin: 0;
+    padding: 0;
 }
 
 .filterbtn:hover {
